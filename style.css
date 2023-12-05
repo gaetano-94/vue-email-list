@@ -6,3 +6,32 @@ RESET
   padding: 0;
   box-sizing: border-box;
 }
+
+/*
+COMMON
+*/
+body {
+  background-color: lightgreen;
+}
+
+.container {
+  width: 800px;
+  background-color: pink;
+  margin: 50px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*
+UTILITY
+*/
+.container h1 {
+  text-transform: uppercase;
+  color: red;
+}
+
+.container .container-list {
+  list-style-type: none;
+  color: blue;
+  padding: 30px 30px;
+}
