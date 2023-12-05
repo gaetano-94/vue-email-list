@@ -5,13 +5,15 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      emails: 'https://flynn.boolean.careers/exercises/api/random/mail',
+      apiUrl: 'https://flynn.boolean.careers/exercises/api/random/mail',
+      list: [],
     };
   },
+  mounted() {
+    for (let i = 0; i < 10; i++) {
+      axios.get(this.apiUrl).then((results) => {
+        this.list.push(results.data.response);
+      });
+    }
+  },
 }).mount('#app');
-
-axios
-  .get('https://flynn.boolean.careers/exercises/api/random/mail')
-  .then((response) => {
-    console.log(response.data);
-  });

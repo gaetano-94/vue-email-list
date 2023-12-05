@@ -18,7 +18,7 @@ body {
   width: 800px;
   background-color: pink;
   margin: 50px auto;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -28,10 +28,17 @@ UTILITY
 .container h1 {
   text-transform: uppercase;
   color: red;
+  font-size: 50px;
 }
 
 .container .container-list {
   list-style-type: none;
   color: blue;
   padding: 30px 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
